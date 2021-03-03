@@ -1,0 +1,46 @@
+.info {
+	padding: 130px 0;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 24px;
+	}
+
+	p {
+		max-width: 750px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.btn-info {
+		margin: 0 auto;
+		margin-top: 24px;
+		max-width: 281px;
+		font-weight: bold;
+		
+
+		@include medium {
+			width: 126px;
+		}
+	}
+
+	&.page {
+		padding: 100px 0;
+
+		@include medium {
+			padding: 120px;
+		}
+
+		p {
+			color: gray;
+		}
+
+		&.press {
+			background-color: $pale;
+
+			.btn-info {
+				width: 225px;
+			}
+		}
+	}
+}

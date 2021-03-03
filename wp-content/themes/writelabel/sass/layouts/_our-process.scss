@@ -1,0 +1,84 @@
+.characteristics {
+
+	padding-bottom: 100px;
+
+	@include medium {
+		padding-bottom: 90px;
+	}
+
+	.image {
+		padding: 0 43px;
+		padding-top: 93px;
+
+		padding-bottom: 27px;
+		
+
+		@include medium {
+			padding-bottom: 73px;
+		}
+
+		img {
+
+			width: 100%;
+			@include medium {
+				width: 373px;
+				height: 347px;
+			}
+			
+			display: block;
+			margin: 0 auto;
+			
+		}
+	}
+
+	.item {
+		
+		margin: 0;
+		margin-bottom: 30px;
+
+		@include medium {
+			margin-left: -15px;
+			margin-right: -15px;
+		}		
+
+		&:last-of-type {
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			margin-bottom: 16px;
+			font-size: 32px;
+			max-width: 475px;
+		}
+
+		p {
+			max-width: 502px;
+			margin-bottom: 24px;
+
+			@include medium {
+				margin-bottom: 51px;
+			}
+			
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: $light-blue;
+			margin: 0 15px;
+		}
+
+		&:last-of-type {
+			&:after {
+				content: none;
+			}
+		}
+	}
+
+
+
+
+}

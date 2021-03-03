@@ -1,0 +1,57 @@
+.client-solutions {
+	padding-bottom: 100px;
+	padding-top: 100px;
+	background-color: $pale;
+
+	h2 {
+
+		text-align: center;
+
+		@include medium {
+			margin-bottom: 84px;
+		}
+	}
+
+	.image {
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 218px;
+		margin-bottom: 30px;
+		background-color: $pale;
+
+		@include medium {
+			margin-top: 0;
+		}
+
+		img {
+			max-width: 220px;
+			max-height: 218px;
+		}
+
+	}
+
+	h3 {
+		margin-bottom: 24px;
+		font-size: 23px;
+
+		@include medium {
+			font-size: 26px;
+		}
+	}
+
+	.btn {
+		max-width: 281px;
+		margin: 0 auto;
+		margin-top: 60px;
+		
+
+
+
+		@include medium {
+			max-width: 197px;
+			margin-top: 27px;
+		}
+	}
+}

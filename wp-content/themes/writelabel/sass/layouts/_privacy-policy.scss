@@ -1,0 +1,66 @@
+.privacy-policy-page {
+	background-color: $pale;
+	
+	padding-top: 55px;
+	padding-bottom: 65px;
+
+	@include medium {
+		padding-top: 114px;
+	}
+
+	p.special {
+		text-align: center;
+		font-weight: 600;
+		margin-bottom: 7px;
+	}
+
+	h1 {
+		text-align: center;
+		
+		margin-bottom: 50px;
+		padding: 0 15px;
+
+		@include medium {
+			margin-bottom: 16px;
+		}
+	}
+
+	p.content {
+		max-width: 756px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+
+		@include medium {
+			text-align: justify;
+			margin-bottom: 160px;
+		}
+	}
+
+	.policy {
+		padding: 28px 0;
+		margin: 0;
+		
+		border-bottom: 2px solid $light-blue;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+
+
+		@include medium {
+			border-top: 2px solid $light-blue;
+			border-bottom: none;
+			padding: 30px 0;
+		}
+
+		h2 {
+			margin-bottom: 13px;
+		}
+
+		p {
+			text-align: justify;
+			opacity: 0.96;
+			color: $gray;
+		}
+	}
+}

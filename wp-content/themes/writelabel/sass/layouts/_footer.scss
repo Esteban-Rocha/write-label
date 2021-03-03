@@ -1,0 +1,283 @@
+.site-footer {
+	.blue {
+		background-color: $light-blue;
+		height: 402px;
+		padding-top: 35px;
+
+		@include medium {			
+			height: 242px;
+		}
+
+		.navigation {
+			display: flex;
+
+			.main-navigation {
+				align-items: center;
+				padding: 0;
+				order: 2;
+				width: 100%;
+				margin-top: 47px;
+				
+
+				@include medium {
+					display: flex;
+					margin-top: 0px;
+				}
+
+				.menu {
+					list-style: none;
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;				
+					padding: 0;
+					margin: 0;
+					max-height: 100px;
+					width: 100%;
+
+					@include medium {
+						flex-direction: row;
+					}
+
+
+					> li {
+						display: block;						
+						position: relative;	
+						width: 50%;	
+						margin-bottom: 20px;		
+
+						@include medium {
+							margin-right: 15px;
+							width: auto;
+						}
+
+						&:after {
+							content: '';
+							display: block;
+							width: 0px;
+							height: 2px;
+							transition: width 320ms;
+							background-color: $primary-color;
+						}
+
+						&.mobile {
+							display: none;
+						}
+
+
+
+						&:hover {
+							&:after {
+								width: 100%;
+							}
+						}
+
+						a {
+							color: $primary-color;
+							font-size: 15px;
+						}
+
+						.sub-menu {				
+							list-style: none;
+							margin: 0;						
+							width: 173px;
+							top: 200%;
+							
+							padding: 0;	
+							position: absolute;	
+
+							@include medium {
+								width: 140px;
+								top: 150%;
+							}	
+
+							li {   	
+
+								margin-bottom: 20px;
+
+								@include medium {
+									margin-bottom: 0px;
+								}
+
+								a {									
+									display: inline-block;
+
+									@include medium {
+																	
+										font-size: 12px;
+										line-height: 24px;	
+																						
+									}
+
+									&:after {
+										content: '';
+										display: block;
+										width: 0px;
+										height: 1px;
+										transition: width 320ms;
+										background-color: $primary-color;
+									}
+
+									&:hover {
+										&:after {
+											width: 100%;
+										}
+									}													
+								}
+							}
+						}
+
+						&.menu-item-has-children > a:after {						
+							content: none;
+							margin-left: 5px;
+							display: inline-block;
+							width: 12px;
+							transition: opacity 320ms;
+
+							@include medium {								
+								content: '\2193';
+							}				
+						}
+
+						&.menu-item-has-children:after {
+							content: none;						
+						}
+					}
+				}
+			}
+		}
+
+		.social {
+			display: none;
+			justify-content: flex-end;
+			align-items: center;
+
+			@include medium {
+				display: flex;
+			}
+
+			.social-media {
+				width: 126px;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	.white {
+		padding: 27px 0;
+		display: none;
+		justify-content: space-between;
+
+		@include medium {
+			display: flex;
+		}
+
+		a {
+			color: $gray;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 0px;
+				height: 1px;
+				transition: width 320ms;
+				background-color: $gray;
+			}
+
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+			}	
+		}
+	}
+
+	.footer-bottom {
+		.mobile {
+			padding-top: 47px;
+
+			@include medium {
+				display: none;
+			}
+
+			.info-bottom {
+				padding-right: 0;
+
+				p {
+					margin-bottom: 14px;
+
+					a {
+						color: $gray;
+					}
+
+					span {
+						display: block;
+
+						@include medium {
+							display: inline-block;
+						}
+					}
+				}
+			}			
+
+			.social {
+				p {
+					margin-bottom: 14px;
+
+					a {
+						display: block;
+						color: $gray;
+
+						img {
+							margin-right: 8px;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+
+.btn-sticky {
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Favorit';
+	font-weight: 600;
+	color: $white;
+	width: 280px;
+	height: 51px;
+	border-radius: 25.5px;
+	margin: 0 auto;
+	font-size: 15px;
+
+	top: 800px;
+	right: -15px;
+	
+	background-color: $blue;
+	
+	transition: background-color 320ms;
+
+	@include medium {
+		display: flex;
+	}
+
+	@include medium {
+		width: 165px;
+		height: 36px;
+		margin: 0;
+		border-radius: 18px;
+	}
+
+	&:active, &:focus, &:hover, &:visited
+	{
+		color: $white !important;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+	}
+}

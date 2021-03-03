@@ -1,0 +1,204 @@
+.creatives {
+
+	overflow: hidden;
+	
+	background-color: $pale;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	@include medium {
+		padding-top: 118px;
+		padding-bottom: 79px;
+	}
+
+	
+	ul {
+		margin: 0;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 83px;
+	}
+
+	.content-slide {
+		display: flex;
+		justify-content: center;
+		.innerContainer {
+			width: 226.88%;
+			max-width: 726px;
+
+			@include medium {
+				
+				width: 106%;
+				max-width: none;
+			}
+
+			.glide__slide {
+				height: auto;
+
+				.creative {
+					background-color: $white;
+					padding: 0 12px;
+					padding-top: 18px;
+					padding-bottom: 24px;
+					
+					height: 100%;
+
+					@include medium {
+						padding: 0 31px;
+						padding-top: 29px;
+						padding-bottom: 19px;
+					}
+
+					.creative-info {
+						display: flex;
+						align-items: center;
+						margin-bottom: 18px;
+						flex-wrap: wrap;
+
+
+
+						.image {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background-size: cover;
+							background-position: center;
+							width: 60px;
+							height: 60px;
+							border-radius: 50%;
+							overflow: hidden;
+							margin-right: 10px;
+
+							@include medium {
+								
+								width: 62px;
+								height: 62px;
+							}
+
+							@include desktop {
+								margin-right: 26px;
+								width: 113px;
+								height: 113px;
+							}
+						}
+
+						p {
+							font-size: 13px;
+
+							@include medium {
+								font-size: 15px;
+							}
+						}
+
+						.meta {
+							flex: 1;
+							h3 {
+								font-size: 20px;
+
+								@include medium {
+									font-size: 23px;
+								}
+							}
+
+							p {
+								font-size: 11px;
+								line-height: 15px;
+
+								@include medium {
+									font-size: 15px;
+									line-height: 22px;
+								}
+							}
+							
+						}
+
+					}
+				}
+			}
+			
+		}
+	}
+
+
+	.glide__bullets {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+
+		@include medium {
+			margin-top: 40px;
+		}
+
+		.glide__bullet {
+			box-shadow: none;
+			background-color: $gray;
+			opacity: 0.5;
+			width: 8px;
+			height: 8px;
+			border-radius: 100%;
+			padding: 0;
+			margin: 0 7px;
+			cursor: pointer;
+			outline: none;
+
+			&.glide__bullet--active {
+				background-color: $blue;
+				opacity: 1;
+			}
+
+			&:focus,
+			&:hover {
+				border-color: transparent;
+			}
+		}
+	}	
+
+	.glide__track {
+		position: relative;
+
+		.glide__arrows {
+
+			display: none;
+
+			@include medium {
+				display: block;
+			}
+
+			.glide__arrow {
+				position: absolute;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				background-color: transparent;
+				top: 0;
+				width: 30%;
+				bottom: 0;
+
+				&.glide__arrow--left {				
+					left: 0;			
+				}	
+
+				&.glide__arrow--right {				
+					right: 0;			
+				}
+			} 
+
+				
+		}
+	}
+
+	
+
+	.btn-contributor {
+		max-width: 281px;
+		
+		margin: 0 auto;
+		margin-top: 30px;
+
+		@include medium {
+			max-width: 202px;
+		}
+	}
+}

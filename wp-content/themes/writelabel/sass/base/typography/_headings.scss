@@ -1,0 +1,79 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: 'Favorit';
+	font-weight: 400;
+	margin: 0;
+	color: $primary-color;
+
+	span {
+		font-family: 'LyonText Italic'
+	}
+}
+
+h1, h2.special {
+	
+	font-size: 30px;
+	letter-spacing: -0.15px;		
+	line-height: 31px;
+
+	@include medium {
+		font-size: 49px;
+		letter-spacing: -0.25px;
+		line-height: 53px;
+	}
+
+	span {
+		font-size: 32px;
+		letter-spacing: -0.2px;
+
+		@include medium {
+			font-size: 49px;
+			letter-spacing: -0.25px;
+		}
+		
+	}
+}
+
+
+
+h2 {
+	font-size: 22px;
+	letter-spacing: -0.11px;
+	line-height: 30px;
+
+	@include medium {
+		font-size: 32px;
+		line-height: 46px;
+		letter-spacing: -0.18px;
+	}
+
+	span {
+		font-size: 28px;
+		letter-spacing: -0.1px;
+
+		@include medium {
+			font-size: 32px;
+			letter-spacing: -0.18px;
+		}
+		
+	}
+}
+
+
+h3 {
+	font-size: 22px;
+	letter-spacing: 0.05px;
+	margin: 0;
+	line-height: 28px;
+
+	@include medium {
+		font-size: 26px;
+		letter-spacing: -0.25px;
+		line-height: 33px;
+	}
+}

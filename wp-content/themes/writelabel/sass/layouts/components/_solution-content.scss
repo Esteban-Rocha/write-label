@@ -1,0 +1,96 @@
+.solution-content {
+	padding-top: 80px;
+	padding-bottom: 100px;
+
+	@include medium {
+		padding-top: 164px;
+		padding-bottom: 0;
+	}
+
+	.image {		
+		margin: 0 15px;
+		margin-bottom: 24px;
+
+		@include medium {
+			margin: 0 auto;
+			margin-bottom: 100px;
+		}
+
+		@include tablet {
+			width: 100%;
+		}
+
+		@include desktop {
+			width: 475px;
+		}
+
+		img {
+			max-width: 100%;
+
+			@include tablet {
+				width: auto;
+				max-height: 332px;
+			}
+			
+		}
+	}
+
+	h2 {
+		max-width: 475px;
+		margin-bottom: 24px;
+		text-align: center;
+
+
+		@include medium {
+			text-align: left;
+			margin: 24px 0;
+		}
+	}
+
+	p {
+		color: $gray;
+		max-width: 475px;
+		text-align: center;
+		margin: 0 15px;
+
+		
+
+		@include medium {
+			opacity: 0.96;
+			text-align: left;
+			margin: 0;
+		}
+	}
+
+	.picture {
+		
+
+		order: 1;
+		margin-top: 73px;
+
+		@include medium {
+			order: 2;
+			margin-top: 0;
+		}
+
+		img {
+
+			@include medium {
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				max-height: 344px;
+			}			
+		}
+
+
+	}
+
+	.content {
+		order: 2;
+
+		@include medium {
+			order: 1;
+		}
+	}
+}

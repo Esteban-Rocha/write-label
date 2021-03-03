@@ -1,0 +1,111 @@
+.sign-in-form {
+	padding: 100px 0;
+
+	.login {
+		max-width: 556px;
+		margin: 0 auto;
+
+		h1 {
+			text-align: center;
+			font-size: 32px;
+		}
+
+		.form-group {
+			@include medium {
+				margin-bottom: 16px;
+			}			
+		}
+
+		input {				
+			background: rgba(9, 19, 33, 0.0638304);
+			border-radius: 24px;
+			border: none;
+			outline: none;
+			padding: 12px 27px;
+			font-size: 15px;
+			color: #6D7278;
+			height: 48px;
+			width: 100%;
+			font-family: 'Favorit';
+
+			&::placeholder {
+				opacity: 0;
+
+				@include medium {
+					opacity: 1;
+				}
+			}
+		}
+
+		label {
+			display: block;
+			width: 100%;
+			margin-top: 21px;
+			margin-bottom: 5px;
+			font-size: 13px;
+			font-family: "Favorit";
+			color: $blue;
+
+
+			@include medium {
+				display: none;
+			}
+		}
+
+		p.p2 {
+			text-align: center;
+			margin-top: 24px;
+			margin-bottom: 33px;
+			opacity: 0.96;
+			padding: 0 15px;
+
+			@include medium {
+				opacity: 1;
+			}
+		}
+
+		.form-group__link {
+			text-align: center;
+			display: block;			
+			color: $blue;
+			margin-top: 27px;
+			font-size: 15px;
+			font-family: "Favorit";
+			font-weight: 600;
+		}
+
+		.wl-button {
+			font-weight: 600;
+			color: $white;
+			border-radius: 25.5px;
+			font-size: 15px;
+			display: block;
+			width: 100%;
+			margin-top: 19px;
+			font-family: "Favorit";
+			font-size: 15px;
+			height: 51px;
+			font-weight: 600;
+			
+
+			@include medium {
+				height: 36px;
+			}
+
+			background-color: $blue;
+			
+			transition: all 320ms;
+			cursor: pointer;
+
+			margin-top: 21px;
+
+			@include medium {
+				margin-top: 0px;
+			}
+
+			&:hover {
+				background-color: $primary-color;
+			}
+		}
+	}
+}

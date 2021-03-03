@@ -1,0 +1,201 @@
+.get-started-form {
+	padding: 100px 0;
+
+	.form-container {
+		max-width: 556px;
+		margin: 0 auto;
+
+		div {
+			@include medium {
+				margin-bottom: 16px;
+			}			
+		}
+		br {
+			display: none;
+		}
+
+		label {
+			display: block;
+			width: 100%;
+			margin-top: 21px;
+			margin-bottom: 5px;
+			font-size: 13px;
+			font-family: "Favorit";
+
+
+			@include medium {
+				display: none;
+			}
+		}
+
+		input {				
+			background: rgba(9, 19, 33, 0.0638304);
+			border-radius: 24px;
+			border: none;
+			outline: none;
+			padding: 12px 27px;
+			font-size: 15px;
+			color: #6D7278;
+			height: 48px;
+			width: 100%;
+			font-family: 'Favorit';
+
+			&::placeholder {
+				opacity: 0;
+
+				@include medium {
+					opacity: 1;
+				}
+			}
+		}
+
+		.r2 {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			& > span {
+				display: block;
+				width: 100%;
+
+
+				@include medium {
+					width: 48.38%;
+				}
+				
+
+
+			}
+
+
+
+		}
+
+		.wpcf7-not-valid-tip {
+			
+			@include medium {
+				padding-left: 27px;
+			}
+		}
+
+		.wpcf7 form.sent .wpcf7-response-output {
+		    border: none;
+		    height: 59px;
+		    font-size: 19px;
+		    font-family: 'Favorit';
+		    background-color: #C0F2C6;
+		    color: $blue;
+		}
+
+		.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+		    border: none;
+		    height: 59px;
+		    font-size: 19px;
+		    font-family: 'Favorit';
+		    background-color: $yellow;
+		    color: $blue;
+		}
+
+		.wpcf7-submit {
+			font-weight: 600;
+			color: $white;
+			border-radius: 25.5px;
+			font-size: 15px;
+			
+
+			@include medium {
+				height: 36px;
+			}
+
+			background-color: $blue;
+			
+			transition: all 320ms;
+			cursor: pointer;
+
+			margin-top: 21px;
+
+			@include medium {
+				margin-top: 0px;
+			}
+
+			&:hover {
+				background-color: $primary-color;
+			}
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 32px;
+		}
+
+		p.p2 {
+			text-align: center;
+			margin-bottom: 16px;
+			padding: 0 15px;
+
+			@include medium {
+				padding: 0;
+			}
+		}
+
+		p.p3 {
+			text-align: right;
+			color: $blue;
+			margin-bottom: 17px;
+			display: none;
+
+			@include medium {
+				display: block;
+			}
+		}
+
+		p.link {
+			text-align: center;
+			a {
+				color: $blue;
+				font-weight: 600;
+			}
+
+			display: block !important;
+			
+		}
+	}
+}
+
+
+.descriptions {
+
+	padding: 80px 0;
+
+	@include medium {
+		padding: 130px 0;
+	}
+	
+
+	.item {
+		padding: 28px 0;
+		margin: 0;
+	
+		border-bottom: 2px solid $light-blue;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+
+
+		@include medium {
+			padding: 30px 0;
+		}
+
+		h2 {
+			margin-bottom: 13px;
+		}
+
+		p {
+			text-align: justify;
+			opacity: 0.96;
+			color: $gray;
+		}
+	}
+	
+}

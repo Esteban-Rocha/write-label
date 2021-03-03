@@ -1,0 +1,231 @@
+.case-study-content {
+	padding-top: 125px;
+	padding-bottom: 100px; 
+
+	@include medium {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 30px;
+
+		@include medium {
+			margin-bottom: 0;
+		}
+	}
+
+	p {
+		text-align: center;
+		margin: 0 auto;
+		
+		font-size: 14px;
+		color: $gray;
+
+		a {
+			color : $gray;
+			font-weight: bold;
+
+			span {
+				text-decoration: underline;
+			}
+		}
+
+		@include medium {
+			font-size: 22px;
+		}
+	}
+
+	.case {
+		p {
+			max-width: 539px;
+
+			
+			padding: 0 8px;
+
+			@include medium {
+				
+				padding: 0;
+			}
+		}
+
+		.line {
+			width: 2px;
+			height: 190px;
+
+			margin: 37px auto;
+
+			@include medium {
+				margin: 30px auto;
+			}
+			
+			background-color: $light-blue;
+		}
+	}
+
+
+	.border {
+		padding: 45px 0;
+		border-bottom: 2px solid $light-blue;
+		border-top: 2px solid $light-blue;
+		
+
+		max-width: 750px;
+
+		margin: 120px auto;
+		
+
+		@include medium {
+			margin: 120px auto;
+		}
+
+
+		h2 {
+			margin-bottom: 16px;
+		}
+
+		p {
+			color: $blue;
+		}
+
+	}
+
+	.circles {
+		margin-top: 100px;
+		margin-bottom: 160px;
+
+		@include medium {
+			margin-top: 200px;
+		}		
+
+		.circle {
+			width: 100%;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+			max-width: 161px;
+			max-height: 161px;
+
+			@include medium {
+				
+
+				max-width: 352px;
+				max-height: 352px;
+			}
+
+			span {
+				display: block;
+				text-align: center;
+				font-family: 'Favorit';
+				font-weight: 400;
+
+				&.number {
+					font-size: 39px;
+					letter-spacing: -2px;
+
+
+					@include desktop {
+						font-size: 89px;
+					}
+				}
+
+				&.title {
+
+					font-size: 14px;
+					max-width: 90px;
+					margin: 0 auto;
+
+					@include desktop {
+						font-size: 22px;
+						max-width: 100%;
+						
+					}
+					
+				}
+				
+			}
+
+			&.circle1 {
+				background-color: $orange;
+				margin-right: auto;
+			}
+
+			&.circle2 {
+				background-color: $light-blue;
+
+				margin-left: auto;
+
+				@include medium {
+					margin: 0 auto;
+				}
+
+				span {
+					&.number {
+						font-size: 49px;
+
+						@include desktop {
+							font-size: 109px;
+						}
+					}
+				}
+			}
+
+			&.circle3 {
+				background-color: $yellow;
+				margin-right: auto;
+
+				@include medium {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+	.script, .result {
+		h2 {
+			margin-bottom: 22px;
+		}
+
+		p {
+			max-width: 750px;
+			opacity: 0.96;
+		}
+	}
+
+	.script {
+		p {
+			margin-bottom: 100px;
+
+			@include medium {
+				margin-bottom: 180px;
+			}
+		}
+	}
+
+	.result {
+
+		h2.solution {
+			font-size: 48px;
+			letter-spacing: -2px;
+			line-height: 59.95px;
+
+			@include medium {
+				font-size: 109px;
+				line-height: 136.14px;
+			}
+		}
+
+		p {
+
+			margin-bottom: 0;
+		}
+
+		.title5 {
+			margin-top: 120px;
+		}
+	}
+}
